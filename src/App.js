@@ -8,7 +8,7 @@ export default function App() {
     <div className="App">
       <ChoiseSection1></ChoiseSection1>
       <ChoiseSection2></ChoiseSection2>
-      {/* <ChoiseSection3></ChoiseSection3> */}
+      <ChoiseSection3></ChoiseSection3>
     </div>
   );
 }
