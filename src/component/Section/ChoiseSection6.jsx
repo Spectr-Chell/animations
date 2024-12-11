@@ -13,44 +13,24 @@ export default function ChoiseSection6() {
     let h3Style  = {textAlign: "center", fontFamily: "sans-serif", color: "gray"}
     let TurnDivtop = "300px";
 
+    let text = [["About me", "I am a web developer specializing in React."],
+                ["About this site", "This site created from show my abilities"],
+                ["About this animation", "Simply takes blocks to the right and left sides of the site :)"]];
+
     return (
         <DivBlockOptionBasic className="Basic" style={ { height: "320px" } }>
 
-            <DivBlockInfo className="ElementTableScrollRelative"
-                style={{
-                    top: "50px",
-                    left: "255px",
-                    height: "200px",
-                    width: "250px",
-                    transition: 'transform 1s, opacity 1s',
-                    opacity: turnMove === 0 ? `100%` : `5%`
+            <DivBlockInfo 
+                className="ElementTable"
+                style={{ 
+                    top: "80px", 
+                    left: "255px", 
+                    height: "150px",
+                    width: "1000px",
+                    transition: 'transform 1s, opacity 0.6s', 
                 }}>
-                <h1 style={h1Style}>About me</h1>
-                <h3 style={h3Style}>I am a web developer specializing in React.</h3>
-            </DivBlockInfo>
-            <DivBlockInfo className="ElementTableScrollRelative"
-                style={{
-                    top: "50px",
-                    left: "625px",
-                    height: "200px",
-                    width: "250px",
-                    transition: 'transform 1s, opacity 1s',
-                    opacity: turnMove === 1 ? `100%` : `5%`
-                }}>
-                <h1 style={ h1Style }>About this site</h1>
-                <h3 style={ h3Style }>This site created from show my abilities</h3>
-            </DivBlockInfo>
-            <DivBlockInfo className="ElementTableScrollRelative"
-                style={{
-                    top: "50px",
-                    left: "1005px",
-                    height: "200px",
-                    width: "250px",
-                    transition: 'transform 1s, opacity 1s',
-                    opacity: turnMove === 2 ? `100%` : `5%`
-                }}>
-                <h1 style={ h1Style }>About this animation</h1>
-                <h3 style={ h3Style }>Simply takes blocks to the right and left sides of the site :)</h3>
+                <h1 style={ h1Style }>{text[turnMove][0]}</h1>
+                <h3 style={ h3Style }>{text[turnMove][1]}</h3>
             </DivBlockInfo>
 
             <TurnDiv style={{ 
