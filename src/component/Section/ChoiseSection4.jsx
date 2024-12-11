@@ -1,27 +1,29 @@
 import DivBlockOptionBasic from "../DivBlock/DivBlockOptionBasic";
 import DivBlockInfo from "../DivBlock/DivBlockInfo";
-import Button from "../Button/Button";
 import TurnDiv from "../DivBlock/TurnDiv";
+import Button from "../Button/Button";
 import React, { useState } from 'react';
 
-export default function ChoiseSection2() {
-
-    let h1Style = { textAlign: "center", fontFamily: "sans-serif" }
-    let h3Style = { textAlign: "center", fontFamily: "sans-serif", color: "gray" }
+export default function ChoiseSection3() {
 
     const [turnMove, setTurnMove] = useState(0)
     const [circleMargin, setCircleMargin] = useState(0)
 
+    let h1Style = {textAlign: "center", fontFamily: "sans-serif"}
+    let h3Style  = {textAlign: "center", fontFamily: "sans-serif", color: "gray"}
+    let TurnDivtop = "300px";
+
     return (
-        <DivBlockOptionBasic className="Basic" style={{ height: "300px" }}>
+        <DivBlockOptionBasic className="Basic" style={ { height: "320px" } }>
+
             <DivBlockInfo className="ElementTableScrollRelative"
                 style={{
                     top: "50px",
+                    left: "255px",
                     height: "200px",
                     width: "250px",
                     transition: 'transform 1s, opacity 1s',
-                    transform: turnMove === 0 ? `translateX(${625}px)` : `translateX(${turnMove === 1 ? 1005 : 255}px)`,
-                    opacity: turnMove === 0 ? `100%` : `5%`
+                    transform: turnMove === 0 ? `translateX(376px)` : `translateX(0px)`
                 }}>
                 <h1 style={h1Style}>About me</h1>
                 <h3 style={h3Style}>I am a web developer specializing in React.</h3>
@@ -29,11 +31,11 @@ export default function ChoiseSection2() {
             <DivBlockInfo className="ElementTableScrollRelative"
                 style={{
                     top: "50px",
+                    left: "255px",
                     height: "200px",
                     width: "250px",
                     transition: 'transform 1s, opacity 1s',
-                    transform: turnMove === 1 ? `translateX(${625}px)` : `translateX(${turnMove === 2 ? 1005 : 255}px)`,
-                    opacity: turnMove === 1 ? `100%` : `5%` 
+                    transform: turnMove === 1 ? `translateX(376px)` : `translateX(0px)`
                 }}>
                 <h1 style={ h1Style }>About this site</h1>
                 <h3 style={ h3Style }>This site created from show my abilities</h3>
@@ -41,32 +43,32 @@ export default function ChoiseSection2() {
             <DivBlockInfo className="ElementTableScrollRelative"
                 style={{
                     top: "50px",
+                    left: "255px",
                     height: "200px",
                     width: "250px",
                     transition: 'transform 1s, opacity 1s',
-                    transform: turnMove === 2 ? `translateX(${625}px)` : `translateX(${turnMove === 0 ? 1005 : 255}px)`,
-                    opacity: turnMove === 2 ? `100%` : `5%` 
+                    transform: turnMove === 2 ? `translateX(376px)` : `translateX(0px)`
                 }}>
                 <h1 style={ h1Style }>About this animation</h1>
                 <h3 style={ h3Style }>Simply takes blocks to the right and left sides of the site :)</h3>
             </DivBlockInfo>
 
             <TurnDiv style={{ 
-                top: "280px", 
+                top: TurnDivtop, 
                 transition: 'transform 1s, opacity 0.6s', 
                 transform: `translateX(${730 + circleMargin}px)`,
                 opacity: turnMove === 0 ? "100%" : "20%",
                 backgroundColor: turnMove === 0 ? "rgb(100, 50, 150)" : "rgb(180, 180, 180)" 
             }}></TurnDiv>
             <TurnDiv style={{ 
-                top: "280px", 
+                top: TurnDivtop, 
                 transition: 'transform 1s, opacity 0.6s', 
                 transform: `translateX(${745 + circleMargin}px)`,
                 opacity: turnMove === 1 ? "100%" : "20%",
                 backgroundColor: turnMove === 1 ? "rgb(100, 50, 150)" : "rgb(180, 180, 180)" 
             }}></TurnDiv>
             <TurnDiv style={{ 
-                top: "280px", 
+                top: TurnDivtop, 
                 transition: 'transform 1s, opacity 0.6s', 
                 transform: `translateX(${760 + circleMargin}px)`,
                 opacity: turnMove === 2 ? "100%" : "20%",
@@ -83,7 +85,7 @@ export default function ChoiseSection2() {
                 style={ { 
                     height: "80px", 
                     width: "80px",  
-                    top: "110px", 
+                    top: "60px", 
                     left: "100px" 
                 }}>
                     {'<'}
@@ -97,7 +99,7 @@ export default function ChoiseSection2() {
                 style={{ 
                     height: "80px", 
                     width: "80px", 
-                    top: "110px", 
+                    top: "60px", 
                     left: "1340px" 
                 }}>
                     {'>'}
