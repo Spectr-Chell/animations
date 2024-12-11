@@ -4,7 +4,7 @@ import TurnDiv from "../DivBlock/TurnDiv";
 import Button from "../Button/Button";
 import React, { useState } from 'react';
 
-export default function ChoiseSection3() {
+export default function ChoiseSection5() {
 
     const [turnMove, setTurnMove] = useState(0)
     const [circleMargin, setCircleMargin] = useState(0)
