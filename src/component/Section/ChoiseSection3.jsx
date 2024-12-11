@@ -85,7 +85,7 @@ export default function ChoiseSection3() {
                 style={ { 
                     height: "80px", 
                     width: "80px",  
-                    top: "60px", 
+                    top: "120px", 
                     left: "100px" 
                 }}>
                     {'<'}
@@ -99,7 +99,7 @@ export default function ChoiseSection3() {
                 style={{ 
                     height: "80px", 
                     width: "80px", 
-                    top: "60px", 
+                    top: "120px", 
                     left: "1340px" 
                 }}>
                     {'>'}

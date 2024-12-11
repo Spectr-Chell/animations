@@ -19,11 +19,11 @@ export default function ChoiseSection3() {
             <DivBlockInfo className="ElementTableScrollRelative"
                 style={{
                     top: "50px",
-                    left: "255px",
+                    left: "625px",
                     height: "200px",
                     width: "250px",
                     transition: 'transform 1s, opacity 1s',
-                    transform: turnMove === 0 ? `translateX(376px)` : `translateX(0px)`
+                    transform: turnMove === 0 ? `translateX(8px)` : `translateX(376px)`
                 }}>
                 <h1 style={h1Style}>About me</h1>
                 <h3 style={h3Style}>I am a web developer specializing in React.</h3>
@@ -31,11 +31,11 @@ export default function ChoiseSection3() {
             <DivBlockInfo className="ElementTableScrollRelative"
                 style={{
                     top: "50px",
-                    left: "255px",
+                    left: "625px",
                     height: "200px",
                     width: "250px",
                     transition: 'transform 1s, opacity 1s',
-                    transform: turnMove === 1 ? `translateX(376px)` : `translateX(0px)`
+                    transform: turnMove === 1 ? `translateX(8px)` : `translateX(376px)`
                 }}>
                 <h1 style={ h1Style }>About this site</h1>
                 <h3 style={ h3Style }>This site created from show my abilities</h3>
@@ -43,11 +43,11 @@ export default function ChoiseSection3() {
             <DivBlockInfo className="ElementTableScrollRelative"
                 style={{
                     top: "50px",
-                    left: "255px",
+                    left: "625px",
                     height: "200px",
                     width: "250px",
                     transition: 'transform 1s, opacity 1s',
-                    transform: turnMove === 2 ? `translateX(376px)` : `translateX(0px)`
+                    transform: turnMove === 2 ? `translateX(8px)` : `translateX(376px)`
                 }}>
                 <h1 style={ h1Style }>About this animation</h1>
                 <h3 style={ h3Style }>Simply takes blocks to the right and left sides of the site :)</h3>
