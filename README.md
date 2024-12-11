@@ -4,4 +4,4 @@
 
  It is also worth knowing that in the future the repository will be updated, as well as the number of animations
 
-# Script to run through the terminal: "npm run start"
+# Script to run: "npm run start"
