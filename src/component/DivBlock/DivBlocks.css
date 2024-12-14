@@ -17,6 +17,23 @@
     border-radius: 5px;
 }
 
+.ElementTableScroll {
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    border: 2px solid rgb(180, 180, 180);
+    border-radius: 5px;
+    opacity: 5%;
+}
+
+
+.h:hover{
+    opacity: 100%;
+}
+
+.ElementTableScroll:hover{
+    opacity: 100%;
+}
+
 .TurnCirlce {
     position: absolute;
     background-color: rgb(180, 180, 180);

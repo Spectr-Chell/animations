@@ -4,6 +4,8 @@ import ChoiseSection3 from "./component/Section/ChoiseSection3";
 import ChoiseSection4 from "./component/Section/ChoiseSection4";
 import ChoiseSection5 from "./component/Section/ChoiseSection5";
 import ChoiseSection6 from "./component/Section/ChoiseSection6";
+import ChoiseSection7 from "./component/Section/ChoiseSection7";
+import ChoiseSection8 from "./component/Section/ChoiseSection8";
 
 const sections = [
   ChoiseSection1,
@@ -12,6 +14,8 @@ const sections = [
   ChoiseSection4,
   ChoiseSection5,
   ChoiseSection6,
+  ChoiseSection7,
+  ChoiseSection8
 ];
 
 export default function App() {
