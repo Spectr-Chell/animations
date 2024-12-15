@@ -14,8 +14,7 @@ const sections = [
   ChoiseSection4,
   ChoiseSection5,
   ChoiseSection6,
-  ChoiseSection7,
-  ChoiseSection8
+  ChoiseSection7
 ];
 
 export default function App() {
